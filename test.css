@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-icon img {
+  width: 27px;
+  height: 27px;
+  margin-left: 20px;
+}
+.social ul {
+  display: flex;
+  list-style: none;
+}
