@@ -9,6 +9,12 @@ body {
   font-style: normal;
 }
 
+button {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
 .container {
   position: relative;
   top: 0;
@@ -263,6 +269,11 @@ h4 {
   background-color: #4456fb;
 }
 
+.red {
+  background: #fa4969;
+  width: 242px;
+}
+
 .skills {
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
@@ -293,16 +304,27 @@ h4 {
   color: #737986;
 }
 
+.form {
+  background-image: url(./images/footer-shape.svg);
+}
+
 .footer p {
   margin: 20px 0;
   color: #737986;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
 }
 
 .form {
   display: block;
 }
 
-.form input {
+.form input,
+textarea {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -327,8 +349,22 @@ h4 {
   height: 59px;
 }
 
+textarea,
 #text {
   width: 672px;
   height: 185px;
   margin: 21px 0;
+  padding: 14px 20px 15px 20px;
+}
+
+.copyright,
+.email {
+  text-align: right;
+  font-size: 16px;
+  line-height: 19px;
+  color: #c5cbfe;
+}
+hr {
+  border: 1px solid #6877ff;
+  margin: 20px 0;
 }
