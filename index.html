@@ -15,19 +15,19 @@
     <title>Nick Haralampopoulos</title>
   </head>
   <body>
+    <div class="nav">
+      <div class="logo"><p class="initials">NH</p></div>
+      <ul class="nav-items">
+        <li class="active"><a href="#intro">Intro</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
     <div class="container">
-      <div class="nav">
-        <div class="logo"><p class="initials">NH</p></div>
-        <ul class="nav-items">
-          <li class="active"><a href="#">Intro</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#22">About</a></li>
-          <li><a href="#23">Contact</a></li>
-        </ul>
-      </div>
-      <div class="back-image"></div>
+      <div class="header-image"></div>
       <div class="content">
-        <div class="header">
+        <div class="header" id="intro">
           <h1>Nick Haralampopoulos</h1>
           <h3>Software Developer</h3>
           <p>
@@ -68,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="contain">
+      <div class="contain" id="portfolio">
         <h4>My Portfolio</h4>
         <div class="portfolio">
           <div class="portfolio-item" id="proj1"></div>
@@ -78,7 +78,7 @@
           <div class="portfolio-item" id="proj5"></div>
           <div class="portfolio-item" id="proj6"></div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
           <h4>About me</h4>
           <p>
             Looking to work as part of a team. I would love if the company
@@ -125,58 +125,54 @@
             </ul>
           </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="contact">
           <h4>Interested in collaborating?</h4>
           <p>
             If you have an application you are interested in developing, a
             feature that you need built or a project that need coding, I’d love
             to help you with it.
           </p>
-          <form
-            class="form"
-            action="https://formspree.io/f/mgepypjn"
-            method="POST"
-          >
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="email" name="email" id="email" placeholder="Email*" />
-            <textarea
-              name="message"
-              id="text"
-              placeholder="Message*"
-            ></textarea>
-            <button class="btn red" type="submit">Get in touch</button>
-          </form>
-          <div class="email">mac.expert.nick@gmail.com</div>
-          <ul class="icons">
-            <li class="s-icon">
+          <div class="form">
+            <form action="https://formspree.io/f/mgepypjn" method="POST">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email*"
+              />
+              <textarea
+                name="message"
+                id="text"
+                placeholder="Message*"
+              ></textarea>
+              <button class="btn red" type="submit">Get in touch</button>
+            </form>
+            <div class="email">mac.expert.nick@gmail.com</div>
+            <div class="icons">
               <a href="#"
                 ><img src="./images/github2.png" alt="github logo"
               /></a>
-            </li>
-            <li class="s-icon">
+
               <a href="#"
                 ><img src="./images/twitter2.png" alt="twitter logo"
               /></a>
-            </li>
-            <li class="s-icon">
+
               <a href="#"
                 ><img src="./images/linkedin2.png" alt="linkedin logo"
               /></a>
-            </li>
-            <li class="s-icon">
+
               <a href="#"
                 ><img src="./images/medium2.png" alt="medium logo"
               /></a>
-            </li>
-            <li class="s-icon">
+
               <a href="#"
                 ><img src="./images/angellist2.png" alt="angellist logo"
               /></a>
-            </li>
-          </ul>
+            </div>
+            <div class="copyright">© 2020 Microverse</div>
+          </div>
         </div>
-        <hr />
-        <div class="copyright">© 2020 Microverse</div>
       </div>
     </div>
 
