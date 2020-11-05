@@ -18,6 +18,10 @@ button {
   font-style: normal;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .nav {
   position: fixed;
   width: 16%;
@@ -268,6 +272,10 @@ h4 {
 
 .about p {
   margin: 20px 0;
+}
+
+.about a {
+  text-decoration: none;
 }
 
 .btn {
