@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background-color: #333;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.nav {
+  background-color: navy;
+}
+
+.container {
+  background-color: olive;
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav,
+  .container {
+    grid-column-start: span 2;
+  }
+}
