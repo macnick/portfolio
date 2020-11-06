@@ -11,6 +11,9 @@ body {
   font-style: normal;
   max-width: 1440px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 button {
   border: none;
@@ -20,6 +23,11 @@ button {
 
 button:hover {
   cursor: pointer;
+  background-color: #ff869c;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav {
@@ -56,7 +64,6 @@ button:hover {
   font-weight: 500;
   font-size: 16px;
   margin: 0 0 0 20px;
-  text-decoration: none;
 }
 
 .container {
@@ -268,10 +275,6 @@ h4 {
   margin: 20px 0;
 }
 
-.about a {
-  text-decoration: none;
-}
-
 .btn {
   font-weight: bold;
   font-size: 16px;
@@ -289,17 +292,13 @@ h4 {
   background-color: #4456fb;
 }
 
-.btn .blue:hover {
+.blue:hover {
   background-color: #7cb1ff;
 }
 
 .red {
   background: #fa4969;
   width: 242px;
-}
-
-.red:hover {
-  background-color: #ff869c;
 }
 
 .grey {
@@ -435,8 +434,15 @@ textarea,
 
 .project-btn {
   position: relative;
-  top: 130px;
+  top: 140px;
   left: 25px;
+  width: 340px;
+}
+
+.source-live {
+  padding: 20px 38px 20px 38px;
+  width: 193px;
+  height: 59px;
 }
 
 .modal-back {
@@ -447,5 +453,5 @@ textarea,
   height: 100%;
   background-color: #000;
   opacity: 0;
-  z-index: 20;
+  z-index: -20;
 }
