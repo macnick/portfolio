@@ -5,7 +5,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 2fr 2fr auto;
 }
 
 .nav {
@@ -16,9 +16,13 @@ body {
   background-color: olive;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 2fr;
+  }
+  /*   
   .nav,
   .container {
-    grid-column-start: span 2;
-  }
+    grid-column-start: span 3;
+  } */
 }
