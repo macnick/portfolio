@@ -30,14 +30,23 @@
       #six {
         display: grid;
         grid-template-columns: 6fr 6fr;
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
         grid-row-gap: 2px;
         grid-column-gap: 2px;
       }
-      #six div {
-        background-color: #333;
+      #six div,
+      #eight div {
+        border: 1px solid black;
       }
-      @media only screen and (max-width: 800px) {
+
+      #eight {
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        /* border: 1px solid yellow; */
+        /* grid-row-gap: 2px; */
+        grid-column-gap: 2px;
+      }
+      @media only screen and (max-width: 900px) {
         #first {
           grid-column-start: 2;
           grid-column-end: 3;
@@ -63,7 +72,8 @@
         #first ul li {
           padding: 0 24px;
         }
-        #six {
+        #six,
+        #eight {
           display: grid;
           grid-template-columns: 12fr;
           border: 1px solid lightgreen;
@@ -92,7 +102,11 @@
         <div>6-4</div>
       </div>
       <div>7</div>
-      <div>8</div>
+      <div id="eight">
+        <div>8-1</div>
+        <div>8-2</div>
+        <div>8-3</div>
+      </div>
       <div>9</div>
       <div>10</div>
       <div>11</div>
