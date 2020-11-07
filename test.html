@@ -3,16 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sora"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="test.css" />
     <title>Test Document</title>
   </head>
   <body>
+    <div class="header-image"></div>
     <div class="wrapper">
-      <div class="nav">navbar</div>
+      <header class="nav">
+        <div class="logo"><p class="initials">NH</p></div>
+        <ul class="nav-items">
+          <li class="active hidden"><a href="#intro">Intro</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
       <div class="container">
-        <div class="header">header</div>
-        <div class="content">content</div>
-        <div class="contain">contain</div>
+        <!-- <div class="header">header</div> -->
+        <div class="content">
+          <div class="header" id="intro">
+            <h1>Nick Haralampopoulos</h1>
+            <h3>Software Developer</h3>
+            <p>
+              Hello I am a software developer! I can help you build a product,
+              feature or website. Look through some of my work and experience!
+              If you like what you see and have project you need coded, don’t
+              hesistate to contact me.
+            </p>
+            <div class="social">
+              <div class="text">My works in social networks</div>
+              <ul class="social-icons">
+                <li class="s-icon">
+                  <a href="https://github.com/macnick"
+                    ><img src="./images/github.png" alt="github logo"
+                  /></a>
+                </li>
+                <li class="s-icon">
+                  <a href="https://twitter.com/mac_experts"
+                    ><img src="./images/twitter.png" alt="twitter logo"
+                  /></a>
+                </li>
+                <li class="s-icon">
+                  <a href="https://www.linkedin.com/in/nick-haralampopoulos/"
+                    ><img src="./images/linkedin.png" alt="linkedin logo"
+                  /></a>
+                </li>
+                <li class="s-icon">
+                  <a href="https://medium.com/@nick.haralampopoulos"
+                    ><img src="./images/medium.png" alt="medium logo"
+                  /></a>
+                </li>
+                <li class="s-icon">
+                  <a href="https://angel.co/u/nick-haralampopoulos"
+                    ><img src="./images/angellist.png" alt="angellist logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Finished here -->
+
+        <div class="contain">
+          contain
+          <div class="portfolio">portfolio</div>
+          <div class="about">about</div>
+          <div class="skills">skills</div>
+          <div class="footer">
+            footer
+            <div class="form">form</div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

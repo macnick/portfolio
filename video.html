@@ -1,587 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+        background-image: url(/images/header-back-mobile.jpg);
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        text-align: center;
+        font-size: 30px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+
+      #first {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+      #six {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        border: 1px solid yellow;
+        grid-row-gap: 2px;
+        grid-column-gap: 2px;
+      }
+      #six div {
+        background-color: #333;
+      }
+      @media only screen and (max-width: 800px) {
+        #first {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 1;
+          background-color: rgba(255, 255, 255, 0.9);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;
+          padding: 0;
+          z-index: 1;
+          width: 100%;
+        }
+        #first ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+          z-index: 1;
+          /* width: 100%; */
+        }
+        #first ul li {
+          padding: 0 24px;
+        }
+        #six {
+          display: grid;
+          grid-template-columns: 12fr;
+          border: 1px solid lightgreen;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="playerPop" popupcontainer="" class="videoWindow">
-      <figure
-        class="bitmovinplayer-container aspect-16x9"
-        style="overflow-y: hidden"
-      >
-        <video
-          id="bitmovinplayer-video-playerPop"
-          preload="auto"
-          webkit-playsinline=""
-          playsinline=""
-          x-webkit-airplay="allow"
-        >
-          <source
-            src="https://alphavod.akamaized.net/2020-2021/bachelor/20201105_THE_BACHELOR_S01_EP020_FIX_ba55cd40.mp4?__token__=st=1604649071~exp=1605513071~acl=/2020-2021/bachelor/20201105_THE_BACHELOR_S01_EP020_FIX_ba55cd40.mp4*~hmac=c1e13baabc932d0aa63abf6050b2b35df6b9327b4c2fb0cfbb66b8ed21ade771"
-            type="video/mp4"
-          />
-        </video>
-        <div class="bitmovinplayer-poster"></div>
-        <div
-          id="bmpui-id-214"
-          class="bmpui-ui-uicontainer bmpui-ui-skin-modern bmpui-flexbox bmpui-player-state-paused bmpui-layout-max-width-1200 bmpui-controls-hidden"
-        >
-          <div class="bmpui-container-wrapper">
-            <div
-              id="bmpui-id-125"
-              class="bmpui-ui-subtitle-overlay bmpui-hidden"
-            >
-              <div class="bmpui-container-wrapper"></div>
-            </div>
-            <div
-              id="bmpui-id-197"
-              class="bmpui-ui-buffering-overlay bmpui-hidden"
-            >
-              <div class="bmpui-container-wrapper">
-                <div
-                  id="bmpui-id-198"
-                  class="bmpui-ui-buffering-overlay-indicator"
-                ></div>
-                <div
-                  id="bmpui-id-199"
-                  class="bmpui-ui-buffering-overlay-indicator"
-                ></div>
-                <div
-                  id="bmpui-id-200"
-                  class="bmpui-ui-buffering-overlay-indicator"
-                ></div>
-              </div>
-            </div>
-            <div id="bmpui-id-201" class="bmpui-ui-playbacktoggle-overlay">
-              <div class="bmpui-container-wrapper">
-                <button
-                  type="button"
-                  id="bmpui-id-202"
-                  class="bmpui-ui-hugeplaybacktogglebutton bmpui-off"
-                >
-                  <span class="bmpui-label">Play/Pause</span>
-                  <div class="bmpui-image"></div>
-                </button>
-              </div>
-            </div>
-            <div
-              id="bmpui-id-203"
-              class="bmpui-ui-cast-status-overlay bmpui-hidden"
-            >
-              <div class="bmpui-container-wrapper">
-                <span
-                  id="bmpui-id-204"
-                  class="bmpui-ui-cast-status-label"
-                ></span>
-              </div>
-            </div>
-            <div id="bmpui-id-196" class="bmpui-ui-controlbar bmpui-hidden">
-              <div class="bmpui-container-wrapper">
-                <div
-                  id="bmpui-id-139"
-                  class="bmpui-ui-settings-panel bmpui-hidden"
-                >
-                  <div class="bmpui-container-wrapper">
-                    <div
-                      id="bmpui-id-128"
-                      class="bmpui-ui-settings-panel-item bmpui-hidden"
-                    >
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-129" class="bmpui-ui-label"
-                          >Video Quality</span
-                        ><select id="bmpui-id-127" class="bmpui-ui-selectbox">
-                          <option value="0" selected="selected">unknown</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div
-                      id="bmpui-id-131"
-                      class="bmpui-ui-settings-panel-item bmpui-hidden"
-                    >
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-132" class="bmpui-ui-label"
-                          >Speed</span
-                        ><select id="bmpui-id-130" class="bmpui-ui-selectbox">
-                          <option value="0.25">0.25x</option>
-                          <option value="0.5">0.5x</option>
-                          <option value="1" selected="selected">Normal</option>
-                          <option value="1.5">1.5x</option>
-                          <option value="2">2x</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div
-                      id="bmpui-id-134"
-                      class="bmpui-ui-settings-panel-item bmpui-hidden"
-                    >
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-135" class="bmpui-ui-label"
-                          >Audio Track</span
-                        ><select id="bmpui-id-133" class="bmpui-ui-selectbox">
-                          <option value="2" selected="selected"></option>
-                        </select>
-                      </div>
-                    </div>
-                    <div
-                      id="bmpui-id-137"
-                      class="bmpui-ui-settings-panel-item bmpui-hidden"
-                    >
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-138" class="bmpui-ui-label"
-                          >Audio Quality</span
-                        ><select id="bmpui-id-136" class="bmpui-ui-selectbox">
-                          <option value="auto">auto</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div
-                      id="bmpui-id-174"
-                      class="bmpui-ui-settings-panel-item bmpui-hidden"
-                    >
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-172" class="bmpui-ui-label"
-                          ><span>Subtitles</span
-                          ><button
-                            type="button"
-                            id="bmpui-id-171"
-                            class="bmpui-ui-subtitlesettingsopenbutton"
-                          >
-                            <span class="bmpui-label">Subtitles settings</span>
-                          </button></span
-                        ><select id="bmpui-id-173" class="bmpui-ui-selectbox">
-                          <option value="null">off</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="bmpui-id-140"
-                  class="bmpui-ui-settings-panel bmpui-hidden"
-                >
-                  <div class="bmpui-container-wrapper">
-                    <div id="bmpui-id-142" class="bmpui-ui-settings-panel-item">
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-143" class="bmpui-ui-label"
-                          >Font size</span
-                        ><select
-                          id="bmpui-id-141"
-                          class="bmpui-ui-selectbox"
-                          style="display: inline-block"
-                        >
-                          <option value="null">default</option>
-                          <option value="50">50%</option>
-                          <option value="75">75%</option>
-                          <option value="100">100%</option>
-                          <option value="150">150%</option>
-                          <option value="200">200%</option>
-                          <option value="300">300%</option>
-                          <option value="400">400%</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div id="bmpui-id-145" class="bmpui-ui-settings-panel-item">
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-146" class="bmpui-ui-label"
-                          >Font family</span
-                        ><select
-                          id="bmpui-id-144"
-                          class="bmpui-ui-selectbox"
-                          style="display: inline-block"
-                        >
-                          <option value="null">default</option>
-                          <option value="monospacedserif">
-                            monospaced serif
-                          </option>
-                          <option value="proportionalserif">
-                            proportional serif
-                          </option>
-                          <option value="monospacedsansserif">
-                            monospaced sans serif
-                          </option>
-                          <option value="proportionalsansserif">
-                            proportional sans serif
-                          </option>
-                          <option value="casual">casual</option>
-                          <option value="cursive">cursive</option>
-                          <option value="smallcapital">small capital</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div id="bmpui-id-148" class="bmpui-ui-settings-panel-item">
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-149" class="bmpui-ui-label"
-                          >Font color</span
-                        ><select
-                          id="bmpui-id-147"
-                          class="bmpui-ui-selectbox"
-                          style="display: inline-block"
-                        >
-                          <option value="null">default</option>
-                          <option value="white">white</option>
-                          <option value="black">black</option>
-                          <option value="red">red</option>
-                          <option value="green">green</option>
-                          <option value="blue">blue</option>
-                          <option value="cyan">cyan</option>
-                          <option value="yellow">yellow</option>
-                          <option value="magenta">magenta</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div id="bmpui-id-151" class="bmpui-ui-settings-panel-item">
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-152" class="bmpui-ui-label"
-                          >Font opacity</span
-                        ><select
-                          id="bmpui-id-150"
-                          class="bmpui-ui-selectbox"
-                          style="display: inline-block"
-                        >
-                          <option value="null">default</option>
-                          <option value="100">100%</option>
-                          <option value="75">75%</option>
-                          <option value="50">50%</option>
-                          <option value="25">25%</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div id="bmpui-id-154" class="bmpui-ui-settings-panel-item">
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-155" class="bmpui-ui-label"
-                          >Character edge</span
-                        ><select
-                          id="bmpui-id-153"
-                          class="bmpui-ui-selectbox"
-                          style="display: inline-block"
-                        >
-                          <option value="null">default</option>
-                          <option value="raised">raised</option>
-                          <option value="depressed">depressed</option>
-                          <option value="uniform">uniform</option>
-                          <option value="dropshadowed">drop shadowed</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div id="bmpui-id-157" class="bmpui-ui-settings-panel-item">
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-158" class="bmpui-ui-label"
-                          >Background color</span
-                        ><select
-                          id="bmpui-id-156"
-                          class="bmpui-ui-selectbox"
-                          style="display: inline-block"
-                        >
-                          <option value="null">default</option>
-                          <option value="white">white</option>
-                          <option value="black">black</option>
-                          <option value="red">red</option>
-                          <option value="green">green</option>
-                          <option value="blue">blue</option>
-                          <option value="cyan">cyan</option>
-                          <option value="yellow">yellow</option>
-                          <option value="magenta">magenta</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div id="bmpui-id-160" class="bmpui-ui-settings-panel-item">
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-161" class="bmpui-ui-label"
-                          >Background opacity</span
-                        ><select
-                          id="bmpui-id-159"
-                          class="bmpui-ui-selectbox"
-                          style="display: inline-block"
-                        >
-                          <option value="null">default</option>
-                          <option value="100">100%</option>
-                          <option value="75">75%</option>
-                          <option value="50">50%</option>
-                          <option value="25">25%</option>
-                          <option value="0">0%</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div id="bmpui-id-163" class="bmpui-ui-settings-panel-item">
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-164" class="bmpui-ui-label"
-                          >Window color</span
-                        ><select
-                          id="bmpui-id-162"
-                          class="bmpui-ui-selectbox"
-                          style="display: inline-block"
-                        >
-                          <option value="null">default</option>
-                          <option value="white">white</option>
-                          <option value="black">black</option>
-                          <option value="red">red</option>
-                          <option value="green">green</option>
-                          <option value="blue">blue</option>
-                          <option value="cyan">cyan</option>
-                          <option value="yellow">yellow</option>
-                          <option value="magenta">magenta</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div id="bmpui-id-166" class="bmpui-ui-settings-panel-item">
-                      <div class="bmpui-container-wrapper">
-                        <span id="bmpui-id-167" class="bmpui-ui-label"
-                          >Window opacity</span
-                        ><select
-                          id="bmpui-id-165"
-                          class="bmpui-ui-selectbox"
-                          style="display: inline-block"
-                        >
-                          <option value="null">default</option>
-                          <option value="100">100%</option>
-                          <option value="75">75%</option>
-                          <option value="50">50%</option>
-                          <option value="25">25%</option>
-                          <option value="0">0%</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div
-                      id="bmpui-id-170"
-                      class="bmpui-ui-settings-panel-item bmpui-last"
-                    >
-                      <div class="bmpui-container-wrapper">
-                        <button
-                          type="button"
-                          id="bmpui-id-168"
-                          class="bmpui-ui-subtitlesettingsclosebutton"
-                        >
-                          <span class="bmpui-label">Back</span></button
-                        ><button
-                          type="button"
-                          id="bmpui-id-169"
-                          class="bmpui-ui-subtitlesettingsresetbutton"
-                        >
-                          <span class="bmpui-label">Reset</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="bmpui-id-184"
-                  class="bmpui-ui-container bmpui-controlbar-top"
-                >
-                  <div class="bmpui-container-wrapper">
-                    <span id="bmpui-id-175" class="bmpui-ui-playbacktimelabel"
-                      >00:14:12</span
-                    >
-                    <div id="bmpui-id-182" class="bmpui-ui-seekbar">
-                      <div class="bmpui-seekbar">
-                        <div
-                          class="bmpui-seekbar-backdrop"
-                          style="transform: scaleX(0.99999)"
-                        ></div>
-                        <div
-                          class="bmpui-seekbar-bufferlevel"
-                          style="transform: scaleX(0.24383874240024694)"
-                        ></div>
-                        <div
-                          class="bmpui-seekbar-seekposition"
-                          style="transform: scaleX(0)"
-                        ></div>
-                        <div
-                          class="bmpui-seekbar-playbackposition"
-                          style="transform: scaleX(0.14794562834705224)"
-                        ></div>
-                        <div class="bmpui-seekbar-markers">
-                          <div
-                            class="bmpui-seekbar-marker"
-                            data-marker-time="1153"
-                            data-marker-title="Ad"
-                            style="width: 19.995699103748716%"
-                          ></div>
-                        </div>
-                        <div
-                          class="bmpui-seekbar-playbackposition-marker"
-                          style="transform: translateX(130.63598983044713px)"
-                        ></div>
-                      </div>
-                      <div
-                        id="bmpui-id-176"
-                        class="bmpui-ui-seekbar-label bmpui-hidden"
-                        style="left: 3.0462625979843225%"
-                      >
-                        <div class="bmpui-container-wrapper">
-                          <div
-                            id="bmpui-id-181"
-                            class="bmpui-seekbar-label-inner"
-                          >
-                            <div class="bmpui-container-wrapper">
-                              <div
-                                id="bmpui-id-179"
-                                class="bmpui-ui-component bmpui-seekbar-thumbnail"
-                              ></div>
-                              <div
-                                id="bmpui-id-180"
-                                class="bmpui-seekbar-label-metadata"
-                              >
-                                <div class="bmpui-container-wrapper">
-                                  <span
-                                    id="bmpui-id-178"
-                                    class="bmpui-ui-label bmpui-seekbar-label-title"
-                                  ></span
-                                  ><span
-                                    id="bmpui-id-177"
-                                    class="bmpui-ui-label bmpui-seekbar-label-time"
-                                    >00:03:15</span
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <span
-                      id="bmpui-id-183"
-                      class="bmpui-ui-playbacktimelabel bmpui-text-right"
-                      >01:36:06</span
-                    >
-                  </div>
-                </div>
-                <div
-                  id="bmpui-id-195"
-                  class="bmpui-ui-container bmpui-controlbar-bottom"
-                >
-                  <div class="bmpui-container-wrapper">
-                    <button
-                      type="button"
-                      id="bmpui-id-185"
-                      class="bmpui-ui-playbacktogglebutton bmpui-off"
-                    >
-                      <span class="bmpui-label">Play/Pause</span></button
-                    ><button
-                      type="button"
-                      id="bmpui-id-186"
-                      class="bmpui-ui-volumetogglebutton bmpui-unmuted"
-                      data-bmpui-volume-level-tens="10"
-                    >
-                      <span class="bmpui-label">Volume/Mute</span>
-                    </button>
-                    <div id="bmpui-id-187" class="bmpui-ui-volumeslider">
-                      <div class="bmpui-seekbar">
-                        <div
-                          class="bmpui-seekbar-backdrop"
-                          style="transform: scaleX(0.99999)"
-                        ></div>
-                        <div class="bmpui-seekbar-bufferlevel"></div>
-                        <div
-                          class="bmpui-seekbar-seekposition"
-                          style="transform: scaleX(0)"
-                        ></div>
-                        <div
-                          class="bmpui-seekbar-playbackposition"
-                          style="transform: scaleX(0.99999)"
-                        ></div>
-                        <div class="bmpui-seekbar-markers"></div>
-                        <div
-                          class="bmpui-seekbar-playbackposition-marker"
-                          style="transform: translateX(56.99999999999999px)"
-                        ></div>
-                      </div>
-                    </div>
-                    <div id="bmpui-id-188" class="bmpui-ui-spacer"></div>
-                    <button
-                      type="button"
-                      id="bmpui-id-189"
-                      class="bmpui-ui-piptogglebutton bmpui-off"
-                    >
-                      <span class="bmpui-label"
-                        >Picture-in-Picture</span
-                      ></button
-                    ><button
-                      type="button"
-                      id="bmpui-id-190"
-                      class="bmpui-ui-airplaytogglebutton bmpui-off bmpui-hidden"
-                    >
-                      <span class="bmpui-label">Apple AirPlay</span></button
-                    ><button
-                      type="button"
-                      id="bmpui-id-191"
-                      class="bmpui-ui-casttogglebutton bmpui-off bmpui-hidden"
-                    >
-                      <span class="bmpui-label">Google Cast</span></button
-                    ><button
-                      type="button"
-                      id="bmpui-id-192"
-                      class="bmpui-ui-vrtogglebutton bmpui-off bmpui-hidden"
-                    >
-                      <span class="bmpui-label">VR</span></button
-                    ><button
-                      type="button"
-                      id="bmpui-id-193"
-                      class="bmpui-ui-settingstogglebutton bmpui-off bmpui-hidden"
-                    >
-                      <span class="bmpui-label">Settings</span></button
-                    ><button
-                      type="button"
-                      id="bmpui-id-194"
-                      class="bmpui-ui-fullscreentogglebutton bmpui-off"
-                    >
-                      <span class="bmpui-label">Fullscreen</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="bmpui-id-205" class="bmpui-ui-titlebar bmpui-hidden">
-              <div class="bmpui-container-wrapper">
-                <span
-                  id="bmpui-id-206"
-                  class="bmpui-ui-label bmpui-label-metadata bmpui-label-metadata-title"
-                ></span
-                ><span
-                  id="bmpui-id-207"
-                  class="bmpui-ui-label bmpui-label-metadata bmpui-label-metadata-description"
-                ></span>
-              </div>
-            </div>
-            <div
-              id="bmpui-id-208"
-              class="bmpui-ui-recommendation-overlay bmpui-hidden"
-            >
-              <div class="bmpui-container-wrapper">
-                <button
-                  type="button"
-                  id="bmpui-id-209"
-                  class="bmpui-ui-hugereplaybutton"
-                >
-                  <span class="bmpui-label">Replay</span>
-                  <div class="bmpui-image"></div>
-                </button>
-              </div>
-            </div>
-            <button
-              type="button"
-              id="bmpui-id-210"
-              class="bmpui-ui-watermark"
-              data-url="http://bitmovin.com"
-            >
-              <span class="bmpui-label"></span>
-            </button>
-            <div
-              id="bmpui-id-211"
-              class="bmpui-ui-errormessage-overlay bmpui-hidden"
-            >
-              <div class="bmpui-container-wrapper">
-                <canvas class="bmpui-ui-tvnoisecanvas"></canvas
-                ><span
-                  id="bmpui-id-212"
-                  class="bmpui-ui-errormessage-label"
-                ></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
+    <div class="grid-container">
+      <div class="navbar" id="first">
+        <div>first</div>
+        <ul>
+          <li>Second</li>
+          <li>Third</li>
+          <li>Fourth</li>
+        </ul>
+      </div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div id="six">
+        <div>6-1</div>
+        <div>6-2</div>
+        <div>6-3</div>
+        <div>6-4</div>
+      </div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
     </div>
   </body>
 </html>
