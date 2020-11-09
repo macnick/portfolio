@@ -63,7 +63,7 @@ a {
 }
 
 .container {
-  background-color: olive;
+  /* background-color: olive; */
   grid-column-start: 2;
   grid-column-end: 3;
   width: 100%;
@@ -134,18 +134,10 @@ a {
 }
 
 .icons a img,
-.s-icon img {
+a img {
   width: 27px;
   height: 27px;
-  margin-left: 14px;
-}
-
-.icons {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-  border-bottom: 1px solid #6877ff;
-  padding: 0 0 20px 0;
+  margin: 10px 0 0 0;
 }
 
 .content .header h1 {
@@ -175,25 +167,25 @@ a {
 }
 
 .social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+  text-align: left;
+  font-family: 'Sora', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 105%;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #fff;
   color: #4f5461;
-  border-radius: 60px;
+  border-radius: 20px;
   padding: 10px 20px;
 }
 
-.social ul {
+.social-icons {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
   .wrapper {
     grid-template-columns: minmax(140px, 1fr) minmax(700px, 10fr) minmax(
         140px,
