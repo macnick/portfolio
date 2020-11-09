@@ -506,4 +506,85 @@ form {
   .footer p {
     color: #4f5461;
   }
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #fff;
+    border-radius: 60px;
+    padding: 10px 20px;
+  }
+
+  .social-icons a img,
+  .s-icon img {
+    width: 27px;
+    height: 27px;
+    margin-left: 14px;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    column-gap: 21px;
+    row-gap: 16px;
+  }
+
+  .portfolio h4 {
+    grid-column-start: span 2;
+  }
+
+  .portfolio-item {
+    height: 286px;
+    margin: 0;
+  }
+
+  .project-info {
+    opacity: 0;
+    width: 405px;
+    height: 286px;
+  }
+
+  .project-info:hover {
+    opacity: 100;
+    transition: all 0.4s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+  }
+
+  .project-info h3 {
+    position: relative;
+    top: 22px;
+    left: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 105.3%;
+    color: #fff;
+  }
+
+  .technologies {
+    position: relative;
+    top: 63px;
+    left: 25px;
+  }
+
+  .project-btn {
+    position: relative;
+    top: 140px;
+    left: 25px;
+    width: 340px;
+  }
+
+  .source-live {
+    padding: 20px 38px 20px 38px;
+    width: 193px;
+    height: 59px;
+  }
 }
