@@ -4,7 +4,6 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  background-color: #333;
 }
 
 html {
@@ -26,6 +25,13 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 29px;
+  color: #4f5461;
+}
+
 .header-image {
   position: absolute;
   top: 0;
@@ -45,7 +51,7 @@ a {
   justify-items: center;
   width: 100vw;
   /* height: 100vh; */
-  height: 1400px;
+  height: 2100px;
   background-image: url(/images/footer-back-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -63,7 +69,6 @@ a {
 }
 
 .container {
-  /* background-color: olive; */
   grid-column-start: 2;
   grid-column-end: 3;
   width: 100%;
@@ -131,6 +136,7 @@ a {
   font-style: normal;
   font-weight: bold;
   color: #ffffff;
+  height: 436px;
 }
 
 .icons a img,
@@ -183,6 +189,165 @@ a img {
 .social-icons {
   display: flex;
   justify-content: space-between;
+}
+
+/* style portfolio  */
+
+.portfolio-item {
+  width: auto;
+  height: 480px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 0 150px 0;
+}
+
+#proj1 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 98.35%
+    ),
+    url(./images/Proj1.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#proj2 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 98.35%
+    ),
+    url(./images/Proj2.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#proj3 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 98.35%
+    ),
+    url(./images/Proj3.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#proj4 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 98.35%
+    ),
+    url(./images/Proj4.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#proj5 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 98.35%
+    ),
+    url(./images/Proj5.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#proj6 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 98.35%
+    ),
+    url(./images/Proj6.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 103%;
+  text-align: center;
+  padding: 22px 0 18px 0;
+  color: #ffffff;
+  border: 0 solid none;
+  border-radius: 60px;
+  width: 193px;
+  height: 59px;
+}
+
+.project-info {
+  opacity: 100;
+  width: 405px;
+  height: 286px;
+}
+
+.project-info h3 {
+  position: relative;
+  top: 20px;
+  left: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 105.3%;
+  color: #fff;
+}
+
+.technologies {
+  position: relative;
+  top: 440px;
+  left: 25px;
+}
+
+.project-btn {
+  position: relative;
+  top: 480px;
+  left: 25px;
+  width: 340px;
+}
+
+.source-live {
+  padding: 20px 38px 20px 38px;
+  width: 193px;
+  height: 59px;
+}
+
+.blue {
+  background-color: #4456fb;
+}
+
+.blue:hover {
+  background-color: #7cb1ff;
+}
+
+.red {
+  background: #fa4969;
+  width: 242px;
+}
+
+.grey {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  border: 0 solid none;
+  border-radius: 60px;
+  background-color: #555;
+  padding: 6px 18px;
 }
 
 @media only screen and (min-width: 1024px) {
