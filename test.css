@@ -38,12 +38,12 @@ h4 {
 
 .wrapper {
   display: grid;
-  grid-template-columns: minmax(10px, 1fr) minmax(355px, 10fr) minmax(10px, 1fr);
+  grid-template-columns: minmax(10px, 1fr) minmax(335px, 10fr) minmax(10px, 1fr);
   grid-template-rows: 100px auto;
   justify-items: center;
   width: 100vw;
   /* height: 100vh; */
-  height: 3800px;
+  height: 6800px;
   background-image: url(/images/footer-back-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
