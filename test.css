@@ -42,10 +42,6 @@ h4 {
   grid-template-rows: 100px auto;
   justify-items: center;
   width: 100vw;
-  /* background-image: url(/images/footer-back-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 100% 670px; */
 }
 
 .header-image {
@@ -460,22 +456,7 @@ form {
         1fr
       );
   }
-  .nav {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0 90px;
-  }
-  .nav ul {
-    flex-direction: column;
-    padding-inline-start: 0px;
-  }
-  .hidden {
-    display: block;
-  }
+
   .logo {
     background: #4456fb;
     border-radius: 50%;
@@ -483,15 +464,45 @@ form {
     height: 86px;
     margin: 47px 0 40px 0;
   }
+
   .initials {
     font-size: 28px;
     line-height: 105.3%;
     padding: 2px 0 0 23px;
   }
+
   .nav-items a {
     font-weight: 500;
     font-size: 19px;
     line-height: 105%;
     margin: 0 0 0 20px;
+  }
+
+  .header h1 {
+    font-size: 68px;
+    line-height: 83px;
+    color: #ffffff;
+  }
+
+  .header h3 {
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+  }
+
+  .header p,
+  .about p,
+  .footer p {
+    font-size: 16px;
+    line-height: 22px;
+    width: 55%;
+    color: #ffffff;
+    margin: 0 0 26px 0;
+  }
+
+  .about p,
+  .footer p {
+    color: #4f5461;
   }
 }
