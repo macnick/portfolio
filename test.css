@@ -43,7 +43,7 @@ h4 {
   justify-items: center;
   width: 100vw;
   /* height: 100vh; */
-  height: 3000px;
+  height: 3800px;
   background-image: url(/images/footer-back-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -353,7 +353,36 @@ a img {
   padding: 6px 18px;
 }
 
-/* About styling */
+/* Skills styling is above*/
+.skills {
+  display: grid;
+  grid-template-columns: 12fr;
+  row-gap: 17px;
+  margin: 50px 0 100px 0;
+}
+
+.skill-item {
+  background-color: #f5f8fd;
+  border-radius: 10px;
+  padding: 31px 28px;
+}
+
+.skill-item .title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 105.3%;
+  margin: 0 0 18px 20px;
+  color: #4f5461;
+}
+
+.skill-item ul {
+  list-style: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 242.5%;
+  margin: 0 0 0 -20px;
+  color: #737986;
+}
 
 @media only screen and (min-width: 1024px) {
   .wrapper {
