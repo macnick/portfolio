@@ -164,15 +164,18 @@ a img {
 .header p,
 .about p,
 .footer p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 22px;
-  /* width: 100%; */
   margin: 0 0 26px 0;
 }
 
 .about p,
 .footer p {
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
   color: #4f5461;
 }
 
@@ -287,8 +290,6 @@ a img {
   color: #ffffff;
   border: 0 solid none;
   border-radius: 60px;
-  /* width: 193px; */
-  height: 59px;
 }
 
 .project-info {
@@ -351,6 +352,8 @@ a img {
   background-color: #555;
   padding: 6px 18px;
 }
+
+/* About styling */
 
 @media only screen and (min-width: 1024px) {
   .wrapper {
