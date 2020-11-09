@@ -42,12 +42,10 @@ h4 {
   grid-template-rows: 100px auto;
   justify-items: center;
   width: 100vw;
-  /* height: 100vh; */
-  /* height: 6350px; */
-  background-image: url(/images/footer-back-mobile.jpg);
+  /* background-image: url(/images/footer-back-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 100% 670px;
+  background-size: 100% 670px; */
 }
 
 .header-image {
@@ -385,8 +383,23 @@ a img {
 }
 
 .form {
-  display: block;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: minmax(10px, 1fr) minmax(335px, 10fr) minmax(10px, 1fr);
   margin: 50px 0 0 0;
+  background-image: url(/images/footer-back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 670px;
+}
+
+form,
+.email,
+.copyright,
+.icons {
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 input,
@@ -408,6 +421,9 @@ textarea {
   margin: 0 0 16px 0;
 }
 
+form {
+  margin-top: 37px;
+}
 .copyright,
 .email {
   text-align: center;
