@@ -62,8 +62,6 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
-  /* height: 90px; */
 }
 
 .container {
@@ -106,6 +104,7 @@ h4 {
   height: 64px;
   /* margin: 47px 0 40px 0; */
 }
+
 .initials {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -116,11 +115,13 @@ h4 {
   z-index: 100;
   padding: 2px 0 0 18px;
 }
+
 .nav-items li {
   margin: 10px 0 10px -60px;
   line-height: 40px;
   list-style: none;
 }
+
 .nav-items a {
   font-weight: 500;
   font-size: 16px;
@@ -130,7 +131,7 @@ h4 {
 /* style content  */
 
 .content {
-  font-family: 'Sora', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   color: #ffffff;
@@ -478,15 +479,15 @@ form {
     margin: 0 0 0 20px;
   }
 
-  .header h1 {
-    font-size: 68px;
-    line-height: 83px;
+  .content .header h1 {
+    font-size: 72px;
+    line-height: 105.3%;
     color: #ffffff;
   }
 
   .header h3 {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 30px;
+    line-height: 105.3%;
     color: #ffffff;
     margin: 0 0 30px 0;
   }
@@ -494,9 +495,9 @@ form {
   .header p,
   .about p,
   .footer p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
-    width: 55%;
+    width: 60%;
     color: #ffffff;
     margin: 0 0 26px 0;
   }
