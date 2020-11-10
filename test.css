@@ -382,6 +382,7 @@ a img {
 .form {
   grid-column-start: 1;
   grid-column-end: 4;
+  width: 100%;
   display: grid;
   grid-template-columns: minmax(10px, 1fr) minmax(335px, 10fr) minmax(10px, 1fr);
   margin: 50px 0 0 0;
@@ -391,10 +392,10 @@ a img {
   background-size: 100% 670px;
 }
 
-form,
 .email,
 .copyright,
-.icons {
+.icons,
+.form-wrap {
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -421,6 +422,7 @@ textarea {
 form {
   margin-top: 37px;
 }
+
 .copyright,
 .email {
   text-align: center;
@@ -586,5 +588,43 @@ form {
     padding: 20px 38px 20px 38px;
     width: 193px;
     height: 59px;
+  }
+
+  .btn {
+    width: 193px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    column-gap: 17px;
+    margin: 50px 0 100px 0;
+  }
+
+  .skill-item {
+    background-color: #f5f8fd;
+    border-radius: 10px;
+    padding: 31px 28px;
+  }
+
+  .skill-item .title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 105.3%;
+    margin: 0 0 18px 20px;
+    color: #4f5461;
+  }
+
+  .skill-item ul {
+    list-style: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 242.5%;
+    margin: 0 0 0 -20px;
+    color: #737986;
+  }
+
+  .form-wrap {
+    width: 75%;
   }
 }
