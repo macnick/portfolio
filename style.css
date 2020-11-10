@@ -44,7 +44,7 @@ h4 {
   position: absolute;
   top: 0;
   background-color: purple;
-  background-image: url(/images/header-back-mobile.jpg);
+  background-image: url(./images/header-back-mobile.jpg);
   height: 550px;
   width: 100%;
   background-repeat: no-repeat;
@@ -382,7 +382,7 @@ a img {
   display: grid;
   grid-template-columns: minmax(10px, 1fr) minmax(335px, 10fr) minmax(10px, 1fr);
   margin: 50px 0 0 0;
-  background-image: url(/images/footer-back-mobile.jpg);
+  background-image: url(./images/footer-back-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% 670px;
