@@ -5,7 +5,7 @@ The source code of my portfolio page
 ## Screenshot
 
 <p align="center">
-<img src="./images/sh-01.jpg">
+<img src="images/sh-01.jpg">
 </p>
 
 ## Technologies Used
