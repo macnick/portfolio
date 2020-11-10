@@ -1,7 +1,3 @@
-/* * {
-  overflow-x: hidden;
-} */
-
 body {
   margin: 0;
   overflow-y: scroll;
@@ -288,7 +284,7 @@ a img {
 }
 
 .project-info {
-  opacity: 100;
+  opacity: 1;
   width: 100%;
   height: 286px;
 }
@@ -551,7 +547,7 @@ form {
   }
 
   .project-info:hover {
-    opacity: 100;
+    opacity: 1;
     transition: all 0.4s ease-in-out;
     transition-property: all;
     transition-duration: 0.5s;
