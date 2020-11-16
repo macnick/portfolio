@@ -43,7 +43,7 @@ h4 {
 .header-image {
   position: absolute;
   top: 0;
-  background-color: purple;
+  background-color: #000;
   background-image: url(./images/header-back-mobile.jpg);
   height: 550px;
   width: 100%;
@@ -90,7 +90,7 @@ h4 {
   font-weight: 500;
   font-size: 20px;
   line-height: 338.5%;
-  color: #ffffff;
+  color: #000;
 }
 
 .logo {
@@ -144,12 +144,14 @@ a img {
 .content .header h1 {
   font-size: 38px;
   line-height: 105%;
+  color: #000;
 }
 
 .header h3 {
   font-size: 19px;
   line-height: 105%;
   margin: 0 0 30px 0;
+  color: #000;
 }
 
 .header p,
@@ -159,6 +161,10 @@ a img {
   font-weight: normal;
   line-height: 22px;
   margin: 0 0 26px 0;
+}
+
+.header p {
+  color: #000;
 }
 
 .about p,
@@ -274,7 +280,7 @@ a img {
 
 .btn {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 103%;
   text-align: center;
   padding: 22px 0 18px 0;
@@ -327,7 +333,8 @@ a img {
 }
 
 .red {
-  background: #fa4969;
+  background: #fb3747;
+  font-size: 20px;
   width: 100%;
 }
 
@@ -372,7 +379,7 @@ a img {
   font-size: 16px;
   line-height: 242.5%;
   margin: 0 0 0 -20px;
-  color: #737986;
+  color: #556;
 }
 
 .form {
@@ -383,6 +390,7 @@ a img {
   grid-template-columns: minmax(10px, 1fr) minmax(335px, 10fr) minmax(10px, 1fr);
   margin: 50px 0 0 0;
   background-image: url(./images/footer-back-mobile.jpg);
+  background-color: #000;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% 670px;
@@ -424,7 +432,7 @@ form {
   text-align: center;
   font-size: 16px;
   line-height: 19px;
-  color: #c5cbfe;
+  color: #fff;
   margin-top: 30px;
 }
 
@@ -470,9 +478,9 @@ form {
     padding: 2px 0 0 23px;
   }
 
-  .nav-items a {
+  .nav-items li a {
     font-weight: 500;
-    font-size: 19px;
+    font-size: 26px;
     line-height: 105%;
     margin: 0 0 0 20px;
   }
@@ -480,13 +488,13 @@ form {
   .content .header h1 {
     font-size: 72px;
     line-height: 105.3%;
-    color: #ffffff;
+    color: #000;
   }
 
   .header h3 {
     font-size: 30px;
     line-height: 105.3%;
-    color: #ffffff;
+    color: #000;
     margin: 0 0 30px 0;
   }
 
@@ -498,6 +506,10 @@ form {
     width: 60%;
     color: #ffffff;
     margin: 0 0 26px 0;
+  }
+
+  .header p {
+    color: #000;
   }
 
   .about p,
@@ -617,7 +629,6 @@ form {
     font-size: 16px;
     line-height: 242.5%;
     margin: 0 0 0 -20px;
-    color: #737986;
   }
 
   .form-wrap {
