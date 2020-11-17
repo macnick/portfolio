@@ -546,8 +546,8 @@ form {
   .portfolio {
     display: grid;
     grid-template-columns: 6fr 6fr;
+    grid-template-rows: auto 64vh 64vh 64vh;
     column-gap: 21px;
-    row-gap: 16px;
   }
 
   .portfolio h4 {
@@ -555,15 +555,14 @@ form {
   }
 
   .portfolio-item {
-    height: 286px;
     margin: 0;
   }
 
-  .project-info {
+  /* .project-info {
     opacity: 0;
     width: 405px;
     height: 286px;
-  }
+  } */
 
   .project-info:hover {
     opacity: 1;
@@ -590,11 +589,16 @@ form {
     position: relative;
     top: 63px;
     left: 25px;
+    position: relative;
+    top: 32vh;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 16px 0 0;
   }
 
   .project-btn {
     position: relative;
-    top: 140px;
+    /* top: 36vh; */
     left: 25px;
     width: 340px;
   }
