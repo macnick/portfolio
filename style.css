@@ -196,6 +196,11 @@ a img {
 }
 
 /* style portfolio  */
+.portfolio {
+  display: grid;
+  grid-template-columns: 12fr;
+  row-gap: 16px;
+}
 
 .portfolio-item {
   width: auto;
@@ -203,7 +208,7 @@ a img {
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
   border-radius: 10px;
-  margin: 0 0 26vh 0;
+  margin: 0 0 35vh 0;
 }
 
 #proj1 {
@@ -309,12 +314,15 @@ a img {
 .technologies {
   position: relative;
   top: 32vh;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
   /* left: 25px; */
 }
 
 .project-btn {
   position: relative;
-  top: 40vh;
+  top: 37vh;
 }
 
 .source-live {
