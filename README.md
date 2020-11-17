@@ -15,7 +15,6 @@ The source code of my portfolio page
 
 ## Live version
 
-- [Nick Haralampopoulos portfolio](https://macnick.github.io/portfolio/) @ GitHub.com
 - [Nick Haralampopoulos portfolio](https://nickharas.com/portfolio/) @ nickharas.com
 
 ## Acknowledgements
