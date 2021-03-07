@@ -30,15 +30,9 @@ The source code of my portfolio page
 - Linkedin: [Nick Haralampopoulos](https://www.linkedin.com/in/nick-haralampopoulos/)
 - AngelList: [Nick Haralampopoulos](https://angel.co/u/nick-haralampopoulos)
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/macnick/portfolio/issues).
-
 ## Show your support
 
-Give a ⭐️ if you enjoyed this project!
+Give a ⭐️ if you liked my portfolio page!
 
 ## 📝 License
 
